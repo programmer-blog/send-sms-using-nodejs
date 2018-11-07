@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  .container
+  br
+  .row.justify-content-center
+    .col-12.col-md-10.col-lg-8
+      h1 Send SMS using Nodejs and Nexmo API
+  .row.justify-content-center
+    .col-12.col-md-10.col-lg-8
+      .alert.alert-danger.d-none#error
+        strong Error!&nbsp;
+        | Mobile number is required.
+  .row.justify-content-center
+    .col-12.col-md-10.col-lg-8
+      form.card.card-sm(action="send" method="post")
+        .card-body.row.no-gutters.align-items-center
+          .col-auto
+          // end of col
+          .col
+            input.form-control.form-control-lg.form-control-borderless(type='text', id='mobile' placeholder='Enter Mobile Number', required)
+          // end of col
+          .col-auto
+            button.btn.btn-lg.btn-success(type='button' id="sendsms") Send SMS
