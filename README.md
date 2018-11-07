@@ -22,4 +22,4 @@ Following taska are performed in this tutorial
     
  For detailed tutorial please visit: 
  
- http://programmerblog.net
+http://programmerblog.net/send-sms-using-nodejs/
